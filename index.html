@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+<meta name="robots" content="noindex" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>原価0円。ノーリスク。青森の海で始めるビーチコーミング副業</title>
+  <style>
+    :root {
+      --blue: #1f6f8b;
+      --deep: #123747;
+      --sand: #f7efe3;
+      --cream: #fffaf2;
+      --green: #4e8f7a;
+      --orange: #e79b45;
+      --text: #263238;
+      --muted: #6b7b83;
+      --white: #ffffff;
+      --shadow: 0 16px 40px rgba(31, 111, 139, 0.15);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #eaf8fb 0%, var(--cream) 45%, #ffffff 100%);
+      line-height: 1.8;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .hero {
+      position: relative;
+      padding: 64px 20px 48px;
+      text-align: center;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.75), transparent 28%),
+        linear-gradient(135deg, #d9f4f8 0%, #fff6e8 100%);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      left: -10%;
+      right: -10%;
+      bottom: -42px;
+      height: 90px;
+      background: var(--cream);
+      border-radius: 50% 50% 0 0;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .label {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: rgba(31, 111, 139, 0.1);
+      color: var(--blue);
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.04em;
+    }
+
+    h1 {
+      margin: 22px 0 18px;
+      font-size: clamp(32px, 7vw, 58px);
+      line-height: 1.18;
+      color: var(--deep);
+      letter-spacing: -0.04em;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto 28px;
+      font-size: 18px;
+      color: #37515b;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 28px 0;
+    }
+
+    .badge {
+      padding: 10px 16px;
+      border-radius: 14px;
+      background: var(--white);
+      box-shadow: 0 8px 18px rgba(31, 111, 139, 0.12);
+      font-weight: 800;
+      color: var(--deep);
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 4px;
+      padding: 15px 24px;
+      border-radius: 999px;
+      background: var(--orange);
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 800;
+      box-shadow: 0 12px 24px rgba(231, 155, 69, 0.32);
+    }
+
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    section {
+      margin: 32px 0;
+      padding: 32px;
+      background: rgba(255, 255, 255, 0.86);
+      border: 1px solid rgba(31, 111, 139, 0.08);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      font-size: clamp(24px, 4vw, 36px);
+      line-height: 1.35;
+      color: var(--deep);
+      letter-spacing: -0.03em;
+    }
+
+    h3 {
+      margin: 24px 0 10px;
+      color: var(--blue);
+      font-size: 20px;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    .lead {
+      font-size: 18px;
+      font-weight: 700;
+      color: #385765;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .card {
+      padding: 20px;
+      border-radius: 22px;
+      background: #f9fcfd;
+      border: 1px solid rgba(31, 111, 139, 0.1);
+    }
+
+    .card strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--deep);
+      font-size: 18px;
+    }
+
+    .steps {
+      counter-reset: step;
+      display: grid;
+      gap: 12px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .steps li {
+      counter-increment: step;
+      position: relative;
+      padding: 16px 18px 16px 58px;
+      border-radius: 18px;
+      background: #fffaf2;
+      border: 1px solid rgba(231, 155, 69, 0.2);
+      font-weight: 700;
+    }
+
+    .steps li::before {
+      content: counter(step);
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--orange);
+      color: white;
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+    }
+
+    .items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .item-box {
+      padding: 22px;
+      border-radius: 24px;
+      background: linear-gradient(180deg, #ffffff, #f5fbfc);
+      border: 1px solid rgba(31, 111, 139, 0.1);
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 1.2em;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    .note {
+      margin-top: 18px;
+      padding: 18px;
+      border-left: 5px solid var(--green);
+      border-radius: 16px;
+      background: #eff8f4;
+      color: #2f5b4d;
+      font-weight: 700;
+    }
+
+    .warning {
+      margin-top: 18px;
+      padding: 18px;
+      border-left: 5px solid #d86c6c;
+      border-radius: 16px;
+      background: #fff2f2;
+      color: #743737;
+      font-weight: 700;
+    }
+
+    .example {
+      margin-top: 16px;
+      padding: 18px;
+      border-radius: 18px;
+      background: #132f3b;
+      color: #eefcff;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 14px;
+      overflow-x: auto;
+    }
+
+    .mini-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #eef7fa;
+      color: var(--blue);
+      font-weight: 800;
+      font-size: 14px;
+    }
+
+    .summary {
+      background: linear-gradient(135deg, var(--deep), var(--blue));
+      color: white;
+      text-align: center;
+    }
+
+    .summary h2 {
+      color: white;
+    }
+
+    .summary p {
+      color: rgba(255,255,255,0.9);
+      font-size: 18px;
+    }
+
+    footer {
+      padding: 30px 20px 48px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 760px) {
+      .hero {
+        padding-top: 44px;
+      }
+
+      section {
+        padding: 24px 18px;
+        border-radius: 22px;
+      }
+
+      .grid,
+      .items {
+        grid-template-columns: 1fr;
+      }
+
+      .badge {
+        width: calc(50% - 5px);
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="label">青森に住んでいる人向け</span>
+      <h1>原価0円。<br>ノーリスク。<br>青森の海で始める副業。</h1>
+      <p>
+        七里長浜でビーチコーミングして、拾った石・貝殻・シーグラスをメルカリで販売するだけ。
+        仕入れゼロ、在庫リスクほぼゼロ、スマホだけで始められるシンプルな副業です。
+      </p>
+      <div class="badges">
+        <span class="badge">原価0円</span>
+        <span class="badge">ノーリスク</span>
+        <span class="badge">スマホでOK</span>
+        <span class="badge">ポスト投函</span>
+      </div>
+      <a class="cta" href="#start">まずは10商品だけ出してみる</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="start">
+      <h2>やることは、拾う → 撮る → 出品 → ポスト投函。</h2>
+      <p class="lead">
+        難しいことはありません。海で素材を拾って、きれいにして、メルカリに出品するだけです。
+      </p>
+      <ol class="steps">
+        <li>七里長浜でビーチコーミングする</li>
+        <li>売れそうな石・貝殻・漂着物を集める</li>
+        <li>家で水洗いして、しっかり乾燥させる</li>
+        <li>写真を撮ってメルカリに出品する</li>
+        <li>売れたら、ゆうゆうメルカリ便で発送する</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>なぜビーチコーミングなのか？</h2>
+      <p>
+        七里長浜は、石拾い・ビーチコーミング好きに知られた場所です。特に津軽錦石は人気があり、
+        ただの石ころに見えても、ハンドメイド素材・観賞用・撮影小物として欲しい人がいます。
+      </p>
+      <div class="grid">
+        <div class="card">
+          <strong>仕入れが不要</strong>
+          海で拾うので、最初にお金をかける必要がありません。
+        </div>
+        <div class="card">
+          <strong>青森の立地が強み</strong>
+          都市部の人は簡単に拾いに来られません。地元にいること自体が強みです。
+        </div>
+        <div class="card">
+          <strong>競合が入りにくい</strong>
+          僻地だからこそ、メルカリ販売目的でわざわざ参入する人が少ない可能性があります。
+        </div>
+      </div>
+      <div class="note">
+        ポイントは「ただの拾い物」ではなく、「青森の海で集めたハンドメイド素材」として見せることです。
+      </div>
+    </section>
+
+    <section>
+      <h2>売れる可能性があるもの</h2>
+      <p class="lead">拾ったものは、素材としてまとめると売りやすくなります。</p>
+      <div class="items">
+        <div class="item-box">
+          <h3>石系</h3>
+          <ul>
+            <li>津軽錦石</li>
+            <li>平たい海の石</li>
+            <li>きれいな石ころ</li>
+            <li>珪化木</li>
+          </ul>
+        </div>
+        <div class="item-box">
+          <h3>ガラス系</h3>
+          <ul>
+            <li>シーグラス</li>
+            <li>ガラス玉の浮き</li>
+          </ul>
+        </div>
+        <div class="item-box">
+          <h3>貝殻系</h3>
+          <ul>
+            <li>タカラガイ</li>
+            <li>イタヤガイ</li>
+            <li>カズラガイ</li>
+            <li>イモガイ</li>
+            <li>ヒオウギガイ</li>
+            <li>アワビ</li>
+            <li>ホタテ</li>
+            <li>エビスガイ</li>
+          </ul>
+        </div>
+        <div class="item-box">
+          <h3>売り方の方向性</h3>
+          <ul>
+            <li>ハンドメイド素材</li>
+            <li>撮影小物</li>
+            <li>インテリア素材</li>
+            <li>水槽レイアウト素材</li>
+            <li>工作・自由研究素材</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>出品までの手順と管理テクニック</h2>
+      <p>
+        拾ったものが増えてくると、「どれを出品したか」「売れたのはどれか」が分からなくなります。
+        なので、最初から管理番号をつけておくのが大事です。
+      </p>
+      <ol class="steps">
+        <li>種類・色・サイズごとに分ける</li>
+        <li>10個以上あるものはセットにする</li>
+        <li>写真を撮る</li>
+        <li>撮ったセットをビニールパックに入れる</li>
+        <li>パックに管理番号を書く</li>
+        <li>商品タイトルにも同じ管理番号を入れる</li>
+      </ol>
+      <div class="example">
+        【A-012】青森 七里長浜 シーグラス ミックス 30個<br>
+        【N-018】津軽錦石風 海の石ころ 10個セット<br>
+        【K-004】平たい海石 ハンドメイド素材 20個
+      </div>
+      <div class="note">
+        管理番号を入れておくと、売れたあとに探すのが一瞬になります。これはかなり大事です。
+      </div>
+    </section>
+
+    <section>
+      <h2>発送は、ゆうゆうメルカリ便が楽。</h2>
+      <p>
+        小さい素材なら、ゆうゆうメルカリ便を使うと手間が少ないです。
+        宛名書き不要、匿名配送、QRコードを読んでポスト投函するだけで発送できます。
+      </p>
+      <div class="mini-list">
+        <span class="pill">匿名配送</span>
+        <span class="pill">宛名書き不要</span>
+        <span class="pill">QRコードで発送</span>
+        <span class="pill">ポスト投函OK</span>
+      </div>
+      <div class="warning">
+        石は見た目より重いです。最初は小さめ・軽め・薄めのセットから始めるのがおすすめです。
+      </div>
+    </section>
+
+    <section>
+      <h2>売れやすくするコツ</h2>
+      <p class="lead">ただ拾って売るより、「買う人が使いやすい形」にすると売れやすくなります。</p>
+      <div class="grid">
+        <div class="card">
+          <strong>色別に分ける</strong>
+          白系、青系、緑系、茶系など、見た目で分けると選びやすくなります。
+        </div>
+        <div class="card">
+          <strong>用途を書く</strong>
+          ハンドメイド、撮影小物、インテリア、水槽素材など、使い道を書きます。
+        </div>
+        <div class="card">
+          <strong>写真をきれいに撮る</strong>
+          自然光で、白い紙・木目・黒布などを背景にすると見栄えが良くなります。
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>TIPS：拾う以外の素材集め</h2>
+      <p>
+        ホタテの貝殻やアワビの貝殻は、スーパー、漁港、飲食店、水産加工場などで廃棄されるものが
+        大量に手に入る可能性があります。
+      </p>
+      <p>
+        もし許可をもらえるなら、洗浄・乾燥してハンドメイド素材として販売できるかもしれません。
+      </p>
+      <div class="warning">
+        必ず許可を取ること。勝手に持っていくのはNGです。
+      </div>
+    </section>
+
+    <section>
+      <h2>応用編：作品にすると単価が上がる。</h2>
+      <p>
+        最初は素材販売でOKです。慣れてきたら、拾った素材を使って作品化すると単価を上げやすくなります。
+      </p>
+      <div class="items">
+        <div class="item-box">
+          <h3>作れるもの</h3>
+          <ul>
+            <li>シーグラスアート</li>
+            <li>貝殻フォトフレーム</li>
+            <li>海石の箸置き</li>
+            <li>錦石風アクセサリー</li>
+            <li>水槽レイアウト素材セット</li>
+            <li>貝殻ビキニ（笑）</li>
+          </ul>
+        </div>
+        <div class="item-box">
+          <h3>考え方</h3>
+          <p>
+            拾ったものをそのまま売ると素材価格。少し加工したり、テーマを作ったりすると作品価格になります。
+          </p>
+          <p>
+            まずは素材販売。慣れたら作品販売。この順番が安全です。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="summary">
+      <h2>まずは1回、海に行って10商品だけ出してみる。</h2>
+      <p>
+        この副業の強みは、失敗してもほぼ損しないこと。<br>
+        仕入れゼロ。スマホで出品。売れたらポスト投函。<br>
+        青森に住んでいること自体が、すでに強みです。
+      </p>
+      <a class="cta" href="#start">最初の流れをもう一度見る</a>
+    </section>
+  </main>
+
+  <footer>
+    ※自然海岸での採取は、地域のルール・立入禁止区域・保護対象などを必ず確認してください。無理な採取や大量採取は避け、マナーを守って楽しみましょう。
+  </footer>
+</body>
+</html>
