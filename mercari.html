@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>児玉式メルカリ副業アイデア集</title>
+  <meta name="description" content="青森の友達に教えたい、少額から始められるメルカリ副業アイデア集。TEMU仕入れ、アクセサリー販売、カー用品、バイク修理、小分け販売、スウェーデントーチまで紹介。" />
+  <style>
+    :root {
+      --bg: #f7f4ee;
+      --card: #ffffff;
+      --main: #21443a;
+      --accent: #d69b3c;
+      --accent-soft: #fff4dc;
+      --text: #222222;
+      --muted: #666666;
+      --line: #e8dfd1;
+      --danger: #8b3a2f;
+      --shadow: 0 18px 45px rgba(43, 34, 20, 0.08);
+      --radius: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(214, 155, 60, 0.16), transparent 34%),
+        linear-gradient(180deg, #fbf7ef 0%, var(--bg) 46%, #f1eadf 100%);
+      color: var(--text);
+      line-height: 1.85;
+      letter-spacing: 0.02em;
+    }
+
+    a {
+      color: var(--main);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .hero {
+      padding: 58px 0 34px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border: 1px solid rgba(214, 155, 60, 0.45);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.72);
+      color: var(--main);
+      font-size: 13px;
+      font-weight: 800;
+      box-shadow: 0 10px 25px rgba(43, 34, 20, 0.06);
+    }
+
+    h1 {
+      margin: 20px 0 14px;
+      color: var(--main);
+      font-size: clamp(32px, 6vw, 56px);
+      line-height: 1.18;
+      letter-spacing: 0.04em;
+    }
+
+    .lead {
+      max-width: 760px;
+      margin: 0 auto;
+      color: #3f3f3f;
+      font-size: 17px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 34px 0 0;
+    }
+
+    .hero-point {
+      padding: 18px;
+      background: rgba(255, 255, 255, 0.76);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(43, 34, 20, 0.05);
+    }
+
+    .hero-point strong {
+      display: block;
+      color: var(--main);
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .hero-point span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .toc {
+      margin: 26px 0 34px;
+      padding: 22px;
+      border-radius: var(--radius);
+      background: var(--card);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--line);
+    }
+
+    .toc h2 {
+      margin: 0 0 12px;
+      color: var(--main);
+      font-size: 20px;
+    }
+
+    .toc ol {
+      margin: 0;
+      padding-left: 1.4em;
+      columns: 2;
+      column-gap: 36px;
+    }
+
+    .toc li {
+      break-inside: avoid;
+      margin: 6px 0;
+    }
+
+    .section {
+      margin: 26px 0;
+      padding: 30px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    .num {
+      flex: 0 0 auto;
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: var(--main);
+      color: #fff;
+      font-weight: 900;
+      font-size: 18px;
+      box-shadow: 0 12px 20px rgba(33, 68, 58, 0.18);
+    }
+
+    h2 {
+      margin: 0;
+      color: var(--main);
+      font-size: clamp(23px, 4vw, 32px);
+      line-height: 1.35;
+    }
+
+    h3 {
+      margin: 26px 0 10px;
+      color: var(--main);
+      font-size: 20px;
+      border-left: 5px solid var(--accent);
+      padding-left: 12px;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    .link-box {
+      margin: 16px 0;
+      display: grid;
+      gap: 10px;
+    }
+
+    .link-box a {
+      display: block;
+      padding: 12px 14px;
+      border-radius: 14px;
+      background: #f7fbf8;
+      border: 1px solid #dbe9df;
+      overflow-wrap: anywhere;
+      font-size: 14px;
+    }
+
+    .profit-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin: 18px 0;
+    }
+
+    .profit-card {
+      border-radius: 18px;
+      background: var(--accent-soft);
+      border: 1px solid #ead4a4;
+      padding: 18px;
+    }
+
+    .profit-card h4 {
+      margin: 0 0 10px;
+      color: #5f3b05;
+      font-size: 17px;
+    }
+
+    .calc {
+      margin: 0;
+      padding: 14px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.72);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 14px;
+      line-height: 1.65;
+      overflow-x: auto;
+    }
+
+    .result {
+      margin-top: 10px;
+      font-weight: 900;
+      color: var(--danger);
+      font-size: 18px;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 12px 0 18px;
+    }
+
+    .tag {
+      display: inline-flex;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #eef5f1;
+      color: var(--main);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    ul {
+      margin: 8px 0 16px;
+      padding-left: 1.25em;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    .note {
+      margin-top: 18px;
+      padding: 16px 18px;
+      border-radius: 16px;
+      background: #fff8f5;
+      border: 1px solid #edd0c8;
+      color: #5d2e28;
+      font-size: 14px;
+    }
+
+    .recommend {
+      margin: 34px 0 54px;
+      padding: 32px;
+      border-radius: 28px;
+      color: #fff;
+      background:
+        linear-gradient(135deg, rgba(33, 68, 58, 0.96), rgba(20, 45, 39, 0.96)),
+        radial-gradient(circle at top right, rgba(214, 155, 60, 0.8), transparent 35%);
+      box-shadow: 0 22px 50px rgba(33, 68, 58, 0.2);
+    }
+
+    .recommend h2 {
+      color: #fff;
+      margin-bottom: 14px;
+    }
+
+    .recommend ol {
+      margin: 16px 0 0;
+      padding-left: 1.35em;
+    }
+
+    .recommend li {
+      margin: 9px 0;
+      font-weight: 800;
+    }
+
+    .footer {
+      padding: 26px 0 46px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 780px) {
+      .page {
+        width: min(100% - 22px, 1080px);
+      }
+
+      .hero {
+        padding-top: 36px;
+      }
+
+      .hero-grid,
+      .profit-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .toc ol {
+        columns: 1;
+      }
+
+      .section {
+        padding: 22px 18px;
+      }
+
+      .section-header {
+        gap: 12px;
+      }
+
+      .num {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+        border-radius: 12px;
+      }
+
+      .recommend {
+        padding: 24px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="badge">春吉にポルシェを、夏美にアルファードを｜少額から始めるメルカリ副業</div>
+      <h1>児玉式<br />メルカリ副業アイデア集</h1>
+      <p class="lead">
+        いきなり大きな資金を使う必要はありません。まずは少額仕入れ・小さな在庫・メルカリ販売から始めて、売れる商品を見つけながら少しずつ広げていくのがおすすめです。
+      </p>
+
+      <div class="hero-grid">
+        <div class="hero-point">
+          <strong>初期費用が小さい</strong>
+          <span>100円〜数千円の商品からテスト可能</span>
+        </div>
+        <div class="hero-point">
+          <strong>作業を使い回せる</strong>
+          <span>画像・説明文を整えれば出品が楽</span>
+        </div>
+        <div class="hero-point">
+          <strong>青森の強みも使える</strong>
+          <span>りんごの木・木材・地方仕入れと相性良し</span>
+        </div>
+      </div>
+    </section>
+
+    <nav class="toc" aria-label="目次">
+      <h2>副業アイデア一覧</h2>
+      <ol>
+        <li><a href="#idea-1">TEMU・AliExpress仕入れ販売</a></li>
+        <li><a href="#idea-2">ライター・小物雑貨販売</a></li>
+        <li><a href="#idea-3">カー用品販売</a></li>
+        <li><a href="#idea-4">車種別パーツ販売</a></li>
+        <li><a href="#idea-5">オリジナルアクセサリー販売</a></li>
+        <li><a href="#idea-6">不動バイクの修理販売</a></li>
+        <li><a href="#idea-7">バイクタンクの塗装販売</a></li>
+        <li><a href="#idea-8">小分け販売</a></li>
+        <li><a href="#idea-9">スウェーデントーチ販売</a></li>
+      </ol>
+    </nav>
+
+    <section class="section" id="idea-1">
+      <div class="section-header">
+        <div class="num">1</div>
+        <h2>TEMU・AliExpress仕入れのメルカリ販売</h2>
+      </div>
+
+      <p>
+        TEMUやAliExpressなどの海外通販サイトでは、アクセサリーやカー用品などが非常に安く販売されています。
+        たとえば「アクセサリー 金」などで検索し、安い順に並べると、100円〜300円程度の金色ネックレスやブレスレットが多数見つかります。
+      </p>
+      <p>
+        こうした商品が、じつはメルカリで1000円以上で販売されています。
+      </p>
+
+      <div class="link-box">
+        <a href="https://www.temu.com/search_result.html?search_key=%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B5%E3%83%AA%E3%83%BC%E3%80%80%E9%87%91&search_method=user" target="_blank" rel="noopener">TEMUで「アクセサリー 金」を見る</a>
+        <a href="https://jp.mercari.com/search?keyword=18%E9%87%91%20%E3%83%A1%E3%83%83%E3%82%AD&order=desc&sort=created_time" target="_blank" rel="noopener">メルカリで「18金 メッキ」を見る</a>
+        <a href="https://jp.mercari.com/search?keyword=18%E9%87%91%E3%80%80%E6%A5%B5%E5%A4%AA%E3%80%80%E3%83%A1%E3%83%83%E3%82%AD&order=desc&sort=created_time" target="_blank" rel="noopener">メルカリで「18金 極太 メッキ」を見る</a>
+      </div>
+
+      <div class="profit-grid">
+        <div class="profit-card">
+          <h4>低単価アクセサリーの利益例</h4>
+          <pre class="calc">販売価格　999円
+手数料　　99円
+送料　　　180円
+原価　　　200円</pre>
+          <div class="result">想定利益：約520円</div>
+        </div>
+        <div class="profit-card">
+          <h4>太めの金ネックレスの利益例</h4>
+          <pre class="calc">販売価格　1,999円
+手数料　　199円
+送料　　　180円
+原価　　　400円</pre>
+          <div class="result">想定利益：約1,220円</div>
+        </div>
+      </div>
+
+      <p>
+        1個あたりの利益は小さく見えますが、画像や商品説明文は使い回しできます。
+        一度出品ページを作れば、作業時間はかなり少なく済みます。
+      </p>
+      <p>
+        低単価商品だけでも、1日1個売れれば月2〜3万円程度の副収入が狙えます。
+        1日10個売れるようになれば、月20万円以上も現実的です。<br>※そもそもかなり安めに計算しているので、実際はもっと稼げますけど。。。
+      </p>
+
+      <h3>高単価商品への展開</h3>
+      <p>
+        ある程度利益が出てきたら、より高単価な商品に移行するのもおすすめです。
+      </p>
+      <pre class="calc">販売価格　8,600円
+手数料　　860円
+送料　　　180円
+原価　　　1,800円
+想定利益　5,760円</pre>
+
+      <div class="link-box">
+        <a href="https://jp.mercari.com/user/profile/610745056" target="_blank" rel="noopener">高単価アクセサリー販売の参考例</a>
+      </div>
+
+      <div class="note">
+        注意点：商品名に「18金」と書く場合、本当に18金でない商品は誤認表示になりやすいです。メッキ品なら「18KGP」「ゴールドカラー」「金色メッキ」など、実物に合った表現にしてください。
+      </div>
+    </section>
+
+    <section class="section" id="idea-2">
+      <div class="section-header">
+        <div class="num">2</div>
+        <h2>ライター・小物雑貨の販売</h2>
+      </div>
+
+      <p>
+        TEMUには、見た目がかっこいい金属製ライターや防風ライターなどもあります。
+        原価1,000円〜1,200円程度のライターが、メルカリでは2,800円前後で売れるケースもあります。
+      </p>
+
+      <div class="profit-card">
+        <h4>ライター販売の利益例</h4>
+        <pre class="calc">販売価格　2,800円
+原価　　　約1,150円
+送料・手数料差し引き後</pre>
+        <div class="result">想定利益：約1,190円</div>
+      </div>
+
+      <div class="tag-list">
+        <span class="tag">アウトドア</span>
+        <span class="tag">キャンプ</span>
+        <span class="tag">バーベキュー</span>
+        <span class="tag">葉巻</span>
+        <span class="tag">男性向けギフト</span>
+      </div>
+
+      <p>
+        アウトドア、キャンプ、バーベキュー、葉巻、男性向けギフトなどの切り口で見せ方を工夫すると売りやすくなります。
+      </p>
+
+      <div class="link-box">
+        <a href="https://www.temu.com/jp/%E9%98%B2%E9%A2%A8%E3%83%A9%E3%82%A4%E3%82%BF%E3%83%BC-%E8%AA%BF%E7%AF%80%E5%8F%AF%E8%83%BD%E3%81%AA%E7%82%8E%E3%83%8D%E3%82%B8-%E3%81%AA%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF-%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3-%E8%80%90%E4%B9%85%E6%80%A7%E3%81%AE%E3%81%82%E3%82%8B%E9%87%91%E5%B1%9E%E7%B4%A0%E6%9D%90-%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97-%E3%83%90%E3%83%BC%E3%83%99%E3%82%AD%E3%83%A5%E3%83%BC-%E8%91%89%E5%B7%BB%E3%81%AB%E6%9C%80%E9%81%A9-%E7%94%B7%E6%80%A7%E3%81%B8%E3%81%AE%E3%82%AE%E3%83%95%E3%83%88-%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%BF%85%E9%9C%80%E5%93%81-%E7%9D%80%E7%81%AB%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3-g-601104220714837.html?_oak_name_id=3466156601548954537&_oak_mp_inf=ENXusdy31ogBGiA0MTUzOGVhNDllOGM0ODc2ODdlMzdlZWIzNWU0OGVlMyCBmseX3jM%3D&top_gallery_url=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F5998378e-d055-49b2-9271-0a833a8cb097.jpg&spec_gallery_id=285828&refer_page_sn=10009&freesia_scene=2&_oak_freesia_scene=2&_oak_rec_ext_1=MTE0Nw&_oak_gallery_order=793125281%2C539393262%2C1706814691%2C2068652161%2C510155655&search_key=derui%E3%83%A9%E3%82%A4%E3%82%BF%E3%83%BC&refer_page_el_sn=200049&refer_page_name=search_result&refer_page_id=10009_1777628988885_db5zl0813b&_x_sessn_id=31ocmrsa6m" target="_blank" rel="noopener">TEMUのderuiライター参考商品</a>
+      </div>
+      <div class="link-box">
+        <a href="https://jp.mercari.com/search?keyword=derui%20%E3%83%A9%E3%82%A4%E3%82%BF%E3%83%BC&sort=created_time&order=desc" target="_blank" rel="noopener">メルカリのderuiライター参考商品</a>
+      </div>
+
+      <div class="note">
+        注意点：ライターは安全性・配送ルール・危険物扱いに注意が必要です。ガス入り商品や燃料入り商品は、出品前にメルカリ規約と配送条件を必ず確認してください。
+      </div>
+    </section>
+
+    <section class="section" id="idea-3">
+      <div class="section-header">
+        <div class="num">3</div>
+        <h2>カー用品のメルカリ販売</h2>
+      </div>
+
+      <p>
+        カー用品もメルカリ販売と相性が良いジャンルです。
+        TEMUでは、Amazonやカー用品店で1,000円以上するような汎用カーアクセサリーが、30円〜100円程度で見つかることがあります。
+      </p>
+
+      <div class="link-box">
+        <a href="https://www.temu.com/search_result.html?search_key=%E3%82%AB%E3%83%BC%E7%94%A8%E5%93%81&search_method=user" target="_blank" rel="noopener">TEMUでカー用品を見る</a>
+      </div>
+
+      <h3>売りやすい商品例</h3>
+      <ul>
+        <li>シガーソケット系アクセサリー</li>
+        <li>スマホホルダー</li>
+        <li>内装用小物</li>
+        <li>LED系パーツ</li>
+        <li>ドアガード</li>
+        <li>収納系グッズ</li>
+        <li>装飾パーツ</li>
+      </ul>
+
+      <h3>検索に引っかけるコツ</h3>
+      <p>
+        商品説明文には、検索されやすい車種名を自然に入れるのがポイントです。
+      </p>
+      <div class="tag-list">
+        <span class="tag">プリウス</span>
+        <span class="tag">アルファード</span>
+        <span class="tag">ヴェルファイア</span>
+        <span class="tag">N-BOX</span>
+        <span class="tag">ハスラー</span>
+        <span class="tag">コペン</span>
+        <span class="tag">ロードスター</span>
+        <span class="tag">スイフトスポーツ</span>
+      </div>
+      <p>
+        汎用品でも「どんな車に使えそうか」を具体的に書くことで、検索に引っかかりやすくなります。
+      </p>
+    </section>
+
+    <section class="section" id="idea-4">
+      <div class="section-header">
+        <div class="num">4</div>
+        <h2>車種別パーツ販売</h2>
+      </div>
+
+      <p>
+        少し商品知識が必要ですが、車種別パーツに絞ると利益率が高くなることがあります。
+        たとえば、ベンツCクラスのW205のように、昔は高級車だったけれど今は中古で買いやすくなっている車種は狙い目です。
+      </p>
+      <p>
+        こうした車に乗る人は、安く買った車を少し高級に見せたい、内装をきれいにしたい、専用パーツでカスタムしたいという需要があります。
+      </p>
+
+      <div class="profit-card">
+        <h4>車種別パーツの利益イメージ</h4>
+        <pre class="calc">仕入れ価格　約1,000円
+販売価格　　約10,000円</pre>
+        <div class="result">高利益を狙える可能性あり</div>
+      </div>
+
+      <div class="link-box">
+        <a href="https://www.temu.com/search_result.html?search_key=W205&search_method=user" target="_blank" rel="noopener">TEMUでW205パーツを見る</a>
+      </div>
+
+      <div class="note">
+        注意点：車種別パーツは適合確認が重要です。年式、型式、前期・後期、右ハンドル・左ハンドルなどを間違えるとクレームになりやすいため、ある程度の車知識がある人向けです。
+      </div>
+    </section>
+
+    <section class="section" id="idea-5">
+      <div class="section-header">
+        <div class="num">5</div>
+        <h2>オリジナルアクセサリー販売</h2>
+      </div>
+
+      <p>
+        Amazonなどで販売されているハンドメイド用のチェーンやカニカン、チャームを使って、オリジナルアクセサリーを作る方法です。
+        5mのチェーンを購入すれば、50cmのネックレスを約10本作れます。
+      </p>
+      <p>
+        原価は1本あたり50円〜100円程度に抑えられることもあります。
+      </p>
+
+      <div class="link-box">
+        <a href="https://www.amazon.co.jp/dp/B0D53SFYYX" target="_blank" rel="noopener">ハートリンクチェーン｜5mで約490円</a>
+        <a href="https://www.amazon.co.jp/dp/B0CJTB8JJ9/" target="_blank" rel="noopener">喜平チェーン｜5mで約1,020円</a>
+      </div>
+
+      <div class="profit-card">
+        <h4>オリジナルアクセサリーの利益例</h4>
+        <pre class="calc">販売価格　999円
+手数料　　99円
+送料　　　180円
+原価　　　100円</pre>
+        <div class="result">想定利益：約620円</div>
+      </div>
+
+      <p>
+        チャームや天然石風パーツ、韓国風デザイン、地雷系、量産型、メンズ向けなど、見せ方を工夫すれば3,000円〜5,000円程度でも販売できる可能性があります。
+      </p>
+      <p>
+        単なる転売と違い、自分のブランド感を作れるのが強みです。ファンやリピーターがつけば、長期的に単価を上げやすくなります。
+      </p>
+    </section>
+
+    <section class="section" id="idea-6">
+      <div class="section-header">
+        <div class="num">6</div>
+        <h2>不動バイクの修理販売</h2>
+      </div>
+
+      <p>
+        ヤフオクやジモティーで不動バイクを安く仕入れて、修理して売る方法です。
+        不動車といっても、エンジン本体が壊れているとは限りません。
+      </p>
+
+      <h3>よくある不動原因</h3>
+      <ul>
+        <li>キャブレターの詰まり</li>
+        <li>ジェットの詰まり</li>
+        <li>オーリングの劣化</li>
+        <li>フロートの亀裂</li>
+        <li>タンクの負圧チューブ外れ</li>
+        <li>古いガソリンによる始動不良</li>
+      </ul>
+
+      <p>
+        セルが問題なく回り、異音がなければ、エンジン本体が致命的に壊れているケースは意外と少ないです。
+        機械いじりが好きな人なら、かなり利益を狙えるジャンルです。
+      </p>
+
+      <div class="note">
+        注意点：名義変更、防犯登録、自賠責、配送、動作保証などの知識が必要です。初心者はまず原付や小型バイクから始めるのが安全です。
+      </div>
+    </section>
+
+    <section class="section" id="idea-7">
+      <div class="section-header">
+        <div class="num">7</div>
+        <h2>バイクタンクの塗装販売</h2>
+      </div>
+
+      <p>
+        バイク本体ではなく、タンクだけを仕入れて再塗装して売る方法です。
+        ヤフオクなどでは、凹みや傷があるタンクが安く出品されています。
+      </p>
+      <p>
+        それを補修し、グラインダーアートやラップ塗装、キャンディ塗装風に仕上げることで、付加価値をつけて販売できます。
+      </p>
+
+      <div class="profit-card">
+        <h4>利益イメージ</h4>
+        <pre class="calc">安いタンクを仕入れる
+補修・塗装で価値を追加
+完成品として販売</pre>
+        <div class="result">1個あたり5万円程度の利益を狙える可能性あり</div>
+      </div>
+
+      <p>
+        バイク本体の修理より場所を取らず、配送もしやすいのがメリットです。
+        塗装センスや写真の撮り方で価格が大きく変わるため、クリエイティブが得意な人に向いています。
+      </p>
+    </section>
+
+    <section class="section" id="idea-8">
+      <div class="section-header">
+        <div class="num">8</div>
+        <h2>小分け販売</h2>
+      </div>
+
+      <p>
+        大容量で売られている商品を、少量ずつ小分けして販売する方法です。
+        たとえばピカールの4kg缶を購入し、30ml程度の小分け容器に詰めて販売します。
+      </p>
+      <p>
+        普通の人はピカールの一番小さい缶でも使い切れないため、ハンドメイドや金属磨きを少しだけ試したい人には需要があります。
+      </p>
+
+      <h3>小分け販売と相性が良い商品</h3>
+      <ul>
+        <li>ピカール</li>
+        <li>錆転換剤</li>
+        <li>ダイヤモンドペースト</li>
+        <li>研磨剤</li>
+        <li>燻し液</li>
+        <li>金属磨き用品</li>
+        <li>レザークラフト用品</li>
+      </ul>
+
+      <p>
+        大きな利益は出にくいですが、在庫リスクが低く、リピート需要も狙えます。
+      </p>
+
+      <div class="note">
+        注意点：薬品系・危険物系・化粧品系・食品系は、法律やメルカリ規約に引っかかる可能性があります。販売前に必ず確認してください。
+      </div>
+    </section>
+
+    <section class="section" id="idea-9">
+      <div class="section-header">
+        <div class="num">9</div>
+        <h2>スウェーデントーチ販売</h2>
+      </div>
+
+      <p>
+        青森ならではの副業として、スウェーデントーチも面白いです。
+        スウェーデントーチとは、丸太に十字の切り込みを入れて作るアウトドア用の焚き火アイテムです。
+      </p>
+      <p>
+        20cm〜30cm程度の切り株を用意し、十字に切り込みを入れて、半年ほどしっかり乾燥させれば商品化できます。
+        リンゴの老木や剪定で出た幹などが手に入るなら、かなり相性が良いです。
+      </p>
+
+      <h3>商品ページの見せ方</h3>
+      <ul>
+        <li>青森のりんご畑から生まれた、特別なスウェーデントーチ</li>
+        <li>長年りんごを実らせてきた老木を、キャンプの炎として再生</li>
+        <li>自然の香りと炎を楽しむ、青森産アウトドアギア</li>
+      </ul>
+
+      <div class="profit-card">
+        <h4>販売イメージ</h4>
+        <pre class="calc">参考定価　5,000円
+メルカリ販売価格　2,980円</pre>
+        <div class="result">買う側にお得感を出しやすい</div>
+      </div>
+
+      <p>
+        送料がネックになりやすいので、サイズと重さを抑えることが重要です。
+        地元販売、直接引き取り、まとめ売りとも相性が良いです。
+      </p>
+    </section>
+
+    <section class="recommend">
+      <h2>最初におすすめする順番</h2>
+      <p>
+        いきなり大きな修理系や在庫ビジネスを始めるより、まずは小さくテストして、売れた商品だけを増やすのが安全です。
+      </p>
+      <ol>
+        <li>TEMUアクセサリー販売</li>
+        <li>カー用品販売</li>
+        <li>オリジナルアクセサリー販売</li>
+      </ol>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>※販売価格・送料・手数料・規約は変わることがあります。実際に出品する前に、各サービスの最新情報を確認してください。</p>
+  </footer>
+</body>
+</html>
